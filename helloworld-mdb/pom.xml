@@ -71,6 +71,13 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- Required for @ResourceAdapter -->
+        <dependency>
+            <groupId>org.jboss.ejb3</groupId>
+            <artifactId>jboss-ejb3-ext-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 
 </project>

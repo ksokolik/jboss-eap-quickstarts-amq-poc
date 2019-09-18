@@ -23,6 +23,7 @@ import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.MessageListener;
 import javax.jms.TextMessage;
+import org.jboss.ejb3.annotation.ResourceAdapter;
 
 /**
  * <p>
@@ -31,6 +32,7 @@ import javax.jms.TextMessage;
  *
  * @author Serge Pagop (spagop@redhat.com)
  */
+@ResourceAdapter("activemq-ra-remote")
 @MessageDriven(name = "HelloWorldQueueMDB", activationConfig = {
         @ActivationConfigProperty(propertyName = "destinationLookup", propertyValue = "queue/HELLOWORLDMDBQueue"),
         @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue"),
